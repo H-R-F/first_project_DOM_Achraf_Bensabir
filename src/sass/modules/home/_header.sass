@@ -1,0 +1,1076 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+
+    header
+        .logoSpan
+            font-size: x-large
+            font-weight: bold
+        .buttonAndNav
+            width: 90vw
+            display: flex
+            flex-direction: row-reverse
+            .buttonmodal
+                width: 11vw !important
+                height: 6vh
+                border: none
+                border-radius: 20px
+                background-color: #900 !important
+                position: relative
+                display: inline-block
+                color: white
+                background-image: linear-gradient(#7e6767, #7e6767)
+                background-position: 50% 50%
+                background-repeat: no-repeat
+                background-size: 0% 100%
+                transition: background-size .5s, color .5s
+
+body
+    main
+        .modale
+            z-index: 999
+            top: 3%
+            left: 0%
+            width: 100%
+            height: 100%
+            opacity: 100%
+            overflow-x: scroll
+            overflow-y: scroll
+            background-color: #0000005d
+        .signUp
+            width: 100%
+            height: 80vh
+            display: flex
+            justify-content: center
+            margin-top: 12vh
+            position: relative
+            .modalSignup
+                width: 40vw
+                height: 80vh
+                background-color: #9b3737 !important
+                border-radius: 20px
+                display: flex
+
+                // justify-content: space-between
+                .signIn
+                    width: 20vw
+                    height: 8vh
+                    color: #fff
+                    font-size: x-large
+                    font-weight: bold
+                    border-right: 2px solid #fff
+                    border-bottom: 2px solid #fff
+                    border-radius: 20px 20px 0px 20px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-evenly
+                    cursor: pointer
+
+                .logIn
+                    width: 20vw
+                    height: 8vh
+                    color: #fff
+                    font-size: x-large
+                    font-weight: bold
+                    border-bottom: 2px solid #fff
+                    border-radius: 20px 20px 20px 0
+                    // background-color: #810909be
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-evenly
+                    cursor: pointer
+
+            .formSignIn
+                position: absolute
+                top: 10%
+                width: 40vw
+                height: 70vh
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                padding: 30px
+                display: none
+                color: #fff
+                // background-color: #000
+                .inputForm
+                    height: 35vh
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    input
+                        width: 30vw
+                        height: 8vh
+                        margin-top: 30px
+                        border-radius: 20px
+                        border: none
+                        outline: none
+                        margin-top: 15px
+                        padding-left: 15px
+                        font-weight: bold
+                .buttonSubmit
+                    width: 25vw
+                    display: flex
+                    justify-content: space-between
+                    button
+                        width: 12vw
+                        height: 6vh
+                        border: none
+                        border-radius: 20px
+                        font-size: large
+                        font-weight: bold
+                        a
+                            text-decoration: none
+                            color: #fff
+                    .submit
+                        background-color: #810909be
+
+            // .formSignIn
+            //     display: none
+            .formLogIn
+                // display: inline-flex
+                // display: none
+                flex-direction: column
+                justify-content: space-around
+                align-items: center
+                color: #fff
+                .inputForm
+                    height: 28vh
+        .heroSection
+            margin-top: 8vh
+            display: flex
+            justify-content: space-around
+            align-items: center
+            padding: 1.6rem
+            background-color: #e0dada
+            .title
+                width: 40vw
+                .allButton
+                    width: 24vw
+                    display: flex
+                    justify-content: space-between
+                    .Button
+                        width: 11vw
+                        height: 6vh
+                        border: none
+                        border-radius: 20px
+                        background-color: #900
+                        font-weight: bold
+                        color: #fff
+                    .playVideo
+                        width: 11vw
+                        background-color: #e0dada
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        color: #000
+                        cursor: pointer
+                        i
+                            display: flex
+                            justify-content: center
+                            align-content: center
+                            width: 3vw
+                            height: 6vh
+                            font-size: x-large
+                            padding: 10px
+                            border: 2px solid #ab0000
+                            border-radius: 100px
+                            color: #ab0000
+                            opacity: 100%
+                            transition: 2s ease in out
+                            &:hover
+                                border: 2px solid #030303
+                                color: #030303
+            .image
+                img
+                    width: 40vw
+        .secondSection
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            padding: 2rem
+            .title
+                padding-bottom: 1rem
+                p
+                    text-align: center
+            .imgText
+                width: 100%
+                display: flex
+                justify-content: space-around
+                align-items: center
+                .imageLeft
+                    width: 55vw
+                    height: 95vh
+                    background-image: url(../image/about.jpg)
+                    background-size: cover
+                    position: relative
+                    .contactNumber
+                        position: absolute
+                        bottom: 8%
+                        left: 18%
+                        width: 35vw
+                        height: 14vh
+                        background-color: #fff
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        align-items: center
+                .textRight
+                    width: 27vw
+                .text
+                    ul
+                        list-style: none
+                        padding: 10px
+                        li
+                            &::before
+                                content: "\2713"
+                                margin: 10px
+                                font-weight: bold
+                                font-size: large
+                .video
+                    width: 26vw
+                    height: 39.5vh
+                    background-image: url("../image/about-2.jpg")
+                    background-size: contain
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .playicon
+                        background-color: #900
+                        border-radius: 50%
+                        width: 5rem
+                        height: 5rem
+                        animation: popap 2s infinite
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        font-size: x-large
+                        cursor: pointer
+
+        @keyframes popap
+            0%
+                transform: scale(0.95)
+                box-shadow: 0 0 0 0 #900
+            40%
+                transform: scale(1)
+                box-shadow: 0 0 0 2rem rgba(255,255 ,255 ,0.7 )
+            60%
+                transform: scale(1)
+                box-shadow: 0 0 0 2rem rgba(255,255 ,255 ,0.7 )
+            100%
+                transform: scale(0.95)
+                box-shadow: 0 0 0 0 #900
+        .thirdSection
+            display: flex
+            justify-content: space-between
+            align-items: center
+            background-color: #e5dada
+            padding: 2rem
+            margin-bottom: 2rem
+            .first
+                width: 28vw
+                background-color: #000
+                padding: 2rem
+                background-color: #900
+                color: #fff
+                display: flex
+                flex-direction: column
+                align-items: center
+                border-radius: 3px
+                button
+                    width: 10rem
+                    padding: 0.5rem
+                    border: none
+                    border-radius: 20px
+                    background-color: #b63a3a
+                    a
+                        text-decoration: none
+                        color: #fff
+                        font-weight: bold
+                        font-size: large
+            .second
+                width: calc( 62vw/3)
+                height: fit-content
+                background-color: #fff
+                color: #000
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 2rem
+                text-align: center
+                border-radius: 3px
+                img
+                    width: 4vw
+                    padding-bottom: 0.7rem
+                h2
+                    font-size: x-large
+                    padding-bottom: 0.7rem
+
+                p
+                    color: #282626
+        .forImage
+            background-image: url(../image/stats-bg.jpg)
+            display: flex
+            justify-content: space-around
+            padding: 4rem
+            position: relative
+            background-repeat: no-repeat
+            background-attachment: fixed
+            margin-bottom: 2rem
+            &::after
+                position: absolute
+                width: 100%
+                height: 100%
+                opacity: 30%
+                left: 0
+                top: 0
+                content: ""
+                background-color: #000
+
+            .client
+                padding: 2rem
+                text-align: center
+                z-index: 1
+                h2
+                    font-size: 50px
+                    font-weight: bold
+                    color: #fff
+                h3
+                    font-size: x-large
+                    font-weight: bolder
+                    color: #e5dada
+
+        .MenuSection
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            padding: 2rem
+            .title
+                padding-bottom: 1rem
+                p
+                    text-align: center
+            .allButton
+                width: 30vw
+                display: flex
+                justify-content: space-around
+                margin-bottom: 2rem
+                button
+                    border: none
+                    background-color: transparent
+                    border-bottom: 4px solid #e5dada
+                    font-size: x-large
+                    &:focus
+                        color: #900
+                        border-bottom: 4px solid #900
+            .allMenu
+                .Starters
+                    .title
+                        text-align: center
+                        p
+                            font-size: x-large
+                            color: #9b9595
+                        h2
+                            color: #900
+                            font-size: xx-large
+                            font-weight: bold
+                    .all
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        align-items: center
+                        align-items: center
+                        .first
+                            display: flex
+                            div
+                                display: flex
+                                flex-direction: column
+                                align-items: center
+                                padding: 1.4rem
+                                img
+                                    width: 12vw
+                                    margin-bottom: 1.5rem
+                                h3
+
+                                    font-size: xx-large
+                                h5
+                                    color: #9b9595
+                                h4
+                                    color: #900
+                                    font-weight: bold
+                                    font-size: xx-large
+
+        .fourthSection
+            // height: 80vh
+            background-color: #e5dada
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 2rem
+            margin-bottom: 2rem
+            .title
+                text-align: center
+                p
+                    font-size: x-large
+                h2
+                    padding-bottom: 2rem
+            .carousel
+                width: 98vw
+                .dots
+                    width: 1vw
+                    height: 2vh
+                    border-radius: 50%
+                    background-color: #000
+                .content
+                    .contentOfCarousel
+                        display: flex
+                        padding-left: 13.5rem
+                                // background-color: #800
+                        .text
+                            width: 60vw
+                            border-left: 4px solid #900
+                            padding: 2rem
+                            h3
+                                font-weight: bold
+                            h5
+                                color: #a4a0a0
+                                font-weight: bold
+                            .imagestar
+                                img
+                                    width: 1.8vw
+                        .image
+                            img
+                                width: 15vw
+                                border: 2px solid #fff
+                                border-radius: 50%
+
+        .sixthSection
+            display: flex
+            flex-direction: column
+            align-items: center
+            padding: 2rem
+            text-align: center
+            background-color: #e5dada
+            .title
+                h3
+                    font-size: large
+                    color: #736d6d
+                    font-weight: bold
+                    padding-bottom: 1rem
+                h1
+                    font-size: xx-large
+                    padding-bottom: 1rem
+            .card1
+                width: 85vw
+                height: 80vh
+                display: flex
+                justify-content: space-between
+                align-items: center
+                border-radius: 6px
+                .first
+                    box-shadow: 0 0 10px 10px #efeaea
+                    width: 26vw
+                    height: 75vh
+                    border-radius: 6px
+                    transition: 0.3s
+                    position: relative
+                    img
+                        border-radius: 4px 4px 10px 10px
+                        width: 26vw
+                    .text
+                        width: 26vw
+                        text-align: center
+                        padding: 1rem
+                        h5
+                            font-size: large
+                            color: #736d6d
+                        p
+                            font-style: italic
+
+        .seventhSecond
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            padding: 2rem
+            .title
+                text-align: center
+                h3
+                    font-size: large
+                    color: #dbcece
+                    padding-bottom: 1rem
+                    font-weight: bold
+                h1
+                    font-size: xx-large
+                    padding-bottom: 1rem
+            .coontent
+                display: flex
+                justify-content: space-around
+                img
+                    width: 32vw
+                    height: 80vh
+                    border-radius: 20px 0 0 20px
+                form
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: space-evenly
+                    background-color: #e5dada
+                    border-radius: 0 20px 20px 0
+
+                    .first
+                        width: 60vw
+                        display: flex
+                        justify-content: space-around
+                        input
+                            width: 15vw
+                            height: 6vh
+                            border: none
+                            padding: 1rem
+                            outline: none
+                            border-radius: 4px
+                            font-weight: bold
+                            font-style: italic
+                    textarea
+                        width: 56vw
+                        border: none
+                        padding: 1rem
+                        outline: none
+                        border-radius: 4px
+                        resize: none
+                        font-weight: bold
+                        font-style: italic
+                    button
+                        width: 16vw
+                        height: 8vh
+                        border: none
+                        border-radius: 100px
+                        background-color: #900
+                        a
+                            text-decoration: none
+                            color: #fff
+                            font-weight: bold
+
+        // .eighthSection
+
+        .ninthSection
+            display: flex
+            flex-direction: column
+            justify-content: space-around
+            align-items: center
+            padding: 2rem
+            .title
+                text-align: center
+                h3
+                    font-size: large
+                    color: #dbcece
+                    padding-bottom: 1rem
+                    font-weight: bold
+                h1
+                    font-size: xx-large
+                    padding-bottom: 1rem
+            iframe
+                box-shadow: 0 0 10px 10px #efeaea
+            .allCard
+                display: flex
+                flex-direction: column
+                align-items: center
+                .card1
+                    width: 98vw
+                    height: 20vh
+                    display: flex
+                    justify-content: space-evenly
+                    padding-bottom: 1rem
+                    padding: 2rem 1rem 0 0
+                    .insidCard
+                        width: 40vw
+                        height: 16vh
+                        background-color: #e5dada
+                        display: flex
+                        align-items: center
+                        border-radius: 4px
+                        box-shadow: 0 0 10px 10px #efeaea
+                        img
+                            padding: 1.5rem
+            form
+                display: flex
+                flex-direction: column
+                align-items: center
+                background-color: #e5dada
+                box-shadow: 0 0 10px 10px #efeaea
+                margin: 2rem
+                padding: 2rem
+                border-radius: 4px
+                .firstInput
+                    input
+                        width: 40vw
+                        height: 8vh
+                        border: 1px solid #e5dada
+                        padding: 1rem
+                        outline: none
+                        border-radius: 4px
+                        font-weight: bold
+                        font-style: italic
+                        margin-top: 2rem
+                input
+                    width: 80vw
+                    height: 8vh
+                    border: 1px solid #e5dada
+                    padding: 1rem
+                    outline: none
+                    border-radius: 4px
+                    font-weight: bold
+                    font-style: italic
+                    margin-bottom: 1rem
+                textarea
+                    width: 80vw
+                    padding: 1rem
+                    border: 1px solid #e5dada
+                    outline: none
+                    border-radius: 4px
+                    resize: none
+                    font-weight: bold
+                    font-style: italic
+                    margin-bottom: 1rem
+                button
+                    width: 16vw
+                    height: 8vh
+                    border: none
+                    border-radius: 100px
+                    background-color: #900
+                    a
+                        text-decoration: none
+                        color: #fff
+                        font-weight: bold
+
+    footer
+        background-color: #252424
+        color: #fff
+        padding-top: 3rem
+        .allInfo
+            display: flex
+            justify-content: space-around
+            align-items: center
+            .first
+                display: flex
+                flex-direction: column
+                padding-bottom: 2rem
+                .text
+                    display: flex
+                    align-items: center
+                    img
+                        padding-right: 1rem
+                p
+                    width: 12vw
+                    font-size: large
+            .second
+                h3
+                    margin-bottom: 2rem
+        .CopyRight
+            text-align: center
+            display: flex
+            flex-direction: column
+            text-align: center
+            border-top: 2px solid #878282
+            p
+                font-size: small
+
+@media screen and ( max-width:426px  )
+    body
+        header
+            .buttonAndNav
+                width: 40vw !important
+                // flex-direction: row-reverse
+                // flex-direction: column
+                .buttonmodal
+                    width: 50vw !important
+                    height: 6vh
+                    border: none
+                    border-radius: 20px
+                    background-color: #900 !important
+                    position: relative
+                    display: inline-block
+                    color: white
+                    background-image: linear-gradient(#7e6767, #7e6767)
+                    background-position: 50% 50%
+                    background-repeat: no-repeat
+                    background-size: 0% 100%
+                    transition: background-size .5s, color .5s
+
+        main
+            .signUp
+                width: 100%
+                height: 40vh
+                display: flex
+                justify-content: center
+                margin-top: 12vh
+                position: relative
+            .modalSignup
+                width: 80vw !important
+                height: 75vh !important
+                background-color: #9b3737 !important
+
+                .signIn
+                    width: 40vw !important
+
+                .logIn
+                    width: 40vw !important
+
+            .formSignIn
+
+                width: 80vw !important
+
+                .inputForm
+                    input
+                        width: 70vw !important
+                .buttonSubmit
+                    width: 70vw !important
+                    button
+                        width: 33vw !important
+            .heroSection
+                width: 100vw
+                flex-direction: column-reverse
+                .title
+                    width: 100vw
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                .allButton
+                    width: 78vw !important
+                    justify-content: space-around !important
+                    .Button
+                        width: 36vw !important
+                        margin-bottom: 1rem !important
+                    .playVideo
+                        width: 36vw !important
+                        align-items: center !important
+                        justify-content: space-around !important
+                        // border: 2px solid #ab0000 !important
+                        i
+                            width: 10vw !important
+                            height: 5.5vh !important
+                            margin-right: 0.2rem
+
+                            font-size: large !important
+                            // border: none !important
+                            color: #ab0000
+                .image
+                    img
+                        margin-bottom: 2rem
+
+            .secondSection
+                width: 100vw
+                .title
+                    padding-bottom: 1rem
+                    p
+                        text-align: center
+
+                .imgText
+                    flex-direction: column
+                    .imageLeft
+                        width: 100vw
+                        height: 60vh
+                        .contactNumber
+                            width: 60vw
+                    .textRight
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        width: 100vw
+                        padding: 1.3rem
+                        .video
+                            width: 68.4vw
+                            height: 40vh
+
+            .thirdSection
+                width: 100vw
+                flex-direction: column
+                margin: 0
+                .first
+                    width: 80vw !important
+                    margin-bottom: 2rem
+                .second
+                    width: 80vw !important
+                    margin-bottom: 1.5rem
+
+            .forImage
+                flex-direction: column
+                background-size: cover
+                &::after
+                    position: absolute
+                    width: 100%
+                    height: 100%
+                    opacity: 30%
+                    left: 0
+                    top: 0
+                    content: ""
+                    background-color: #000
+
+            .MenuSection
+                width: 100vw !important
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                padding: 2rem
+                .allButton
+                    width: 100vw !important
+                .allMenu
+                    .Starters
+                        .all
+                            .first
+                                flex-direction: column
+                                text-align: center
+                                margin: 0.4rem !important
+                                div
+                                    padding: 0.4rem !important
+                                    img
+                                        width: 60vw !important
+
+            .fourthSection
+                width: 100vw !important
+                margin-bottom: 2rem !important
+                .title
+                    p
+                        width: 89vw
+                .carousel
+                    width: 98vw
+                    position: relative
+                    height: 90vh !important
+                    .carousel-indicators
+                        height: 5vh !important
+                        position: absolute
+                        bottom: -0.4%
+                        margin: 0 !important
+                        padding: 0 !important
+                        align-items: center
+                        .dots
+                            width: 3.5vw !important
+                            height: 2vh
+                            margin: 0.3rem
+                            padding-left: 0 !important
+                .content
+                    .contentOfCarousel
+                        flex-direction: column
+                        padding-left: 2rem !important
+                        .text
+                            p
+                                width: 80vw
+                        .image
+                            img
+                                width: 30vw !important
+
+            .sixthSection
+                width: 100vw !important
+                height: 330vh
+                flex-direction: column
+                padding: 2rem !important
+                .card1
+                    width: 80vw !important
+                    flex-direction: column
+                    // padding: 0 !important
+                    .first
+                        box-shadow: none !important
+                        width: 80vw
+                        height: 2000vh
+                        margin-bottom: 1rem !important
+                        img
+                            border-radius: 4px 4px 10px 10px
+                            width: 80vw !important
+                        .text
+                            width: 80vw !important
+                    .first
+                        &:hover
+                            height: fit-content
+                            box-shadow: 0 0 10px 10px #cfcaca
+
+            .seventhSecond
+                margin: 0rem !important
+                .coontent
+                    flex-direction: column
+                    img
+                        width: 100vw !important
+                        border-radius: 20px 20px 0px 0px !important
+                    form
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: space-evenly
+                        background-color: #e5dada
+                        border-radius: 0 0px 20px 20px !important
+                        padding: 2rem
+
+                        .first
+                            width: 80vw
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-around
+                            input
+                                width: 80vw
+                                margin-top: 1.5rem
+                        textarea
+                            width: 80vw !important
+                            padding: 1rem !important
+                            margin: 2rem auto
+                        button
+                            width: 50vw !important
+
+            .ninthSection
+                padding: 0 !important
+                padding-top: 0rem !important
+                height: 300vh !important
+                .title
+                    width: 50vw
+                    h1
+                        span
+                            font-weight: bold
+                iframe
+                    width: 90vw
+                .allCard
+                    .card1
+                        width: 98vw
+                        height: 38vh !important
+                        flex-direction: column
+                        justify-content: space-between !important
+                        align-items: center !important
+                        padding-right: 0 !important
+                        padding-top: 1rem !important
+                        .insidCard
+                            width: 90vw
+                            height: 16vh
+                            padding-top: 2rem !important
+                            background-color: #e5dada
+                            box-shadow: none !important
+                            img
+                                width: 20vw !important
+                form
+                    width: 100vw !important
+                    align-items: center !important
+                    box-shadow: none
+                    margin: 0 !important
+                    margin: 2rem 0 0 0 !important
+                    .firstInput
+                        display: flex  !important 
+                        flex-direction: column !important
+                        align-items: center !important
+                        input
+                            width: 80vw !important
+                            margin-top: 0rem !important
+                    input
+                        width:80vw !important
+                        height: 8vh
+                    // border: 1px solid #e5dada
+                    // padding: 1rem
+                    // outline: none
+                    // border-radius: 4px
+                    // font-weight: bold
+                    // font-style: italic
+                    // margin-bottom: 1rem
+                    textarea
+                        width: 80vw
+                        // padding: 1rem
+                    button
+                        width: 50vw
+
+        footer
+            background-color: #252424
+            color: #fff
+            padding-top: 3rem
+            width: 100vw
+            .allInfo
+                display: flex
+                flex-direction: column
+                align-items: start
+                margin-left: 2rem
+                .first
+                    display: flex
+                    flex-direction: column
+                    padding-bottom: 2rem
+                    text-align: start
+                    .text
+                        display: flex
+                        align-items: center
+                        img
+                            padding-right: 1rem
+                    p
+                        width: 50vw
+                        font-size: large
+                .second
+                    h3
+                        margin-bottom: 0.8rem
+                    .icon
+                        margin-bottom: 1rem
+                .CopyRight
+                    text-align: center
+                    display: flex
+                    flex-direction: column
+                    text-align: center
+                    border-top: 2px solid #878282
+
+                    p
+                        font-size: small
+
+@media screen and ( min-width: 1441px )
+    main
+    header
+        .nav-item
+            position: relative
+            &::after
+                content: ''
+                border-bottom: 4px solid #900
+                border-radius: 5px
+                width: 0
+                position: absolute
+                left: 0
+                bottom: 0
+                transition: .7s
+            &:first-child, &:hover
+                &::after
+                    width: 90%
+        .buttonmodal
+            width: 30vw !important
+            &:hover
+                background-size: 100% 100%
+                border: 3px solid #000000
+                color: #000 !important
+    .sixthSection
+        .card1
+            .first
+                &:hover
+                    height: 78vh
+                    box-shadow: 0 0 10px 10px #cfcaca
+                    &:after
+                        position: absolute
+                        width: 16%
+                        height: 10%
+                        opacity: 60%
+                        right: 0
+                        top: 10%
+                        content: url(../image/icons8-twitterx-50.png)
+                        background-color: #000
+                        border-radius: 10px 0px 0px 10px
+                    &:before
+                        position: absolute
+                        width: 16%
+                        height: 10%
+                        opacity: 60%
+                        right: 0
+                        top: 22%
+                        content: url(../image/icons8-twitterx-50.png)
+                        background-color: #000
+                        border-radius: 3px
+                        border-radius: 10px 0px 0px 10px
+    .ninthSection
+        .allCard
+            .card1
+                .insidCard
+                    transition: 1s
+                    &:hover
+                        width: 41vw
+                        height: 17vh

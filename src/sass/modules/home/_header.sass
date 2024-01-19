@@ -4,30 +4,30 @@
     box-sizing: border-box
     font-family: Arial, Helvetica, sans-serif
 
-    header
-        .logoSpan
-            font-size: x-large
-            font-weight: bold
-        .buttonAndNav
-            width: 90vw
-            display: flex
-            flex-direction: row-reverse
-            .buttonmodal
-                width: 11vw !important
-                height: 6vh
-                border: none
-                border-radius: 20px
-                background-color: #900 !important
-                position: relative
-                display: inline-block
-                color: white
-                background-image: linear-gradient(#7e6767, #7e6767)
-                background-position: 50% 50%
-                background-repeat: no-repeat
-                background-size: 0% 100%
-                transition: background-size .5s, color .5s
-
 body
+    h2
+        font-family: "myfont"
+        font-weight: bold
+        font-size: 80px
+        span
+            font-family: "myfont"
+            font-size: 80px
+    h1
+        font-family: "myfont"
+        font-size: 80px !important
+        span
+            font-family: "myfont"
+            font-size: 80px
+    header
+        100vw
+        .navbar-nav
+            width: 60vw
+            display: flex
+            align-items: center
+            justify-content: center
+        .modal-btn
+            width: 12vw !important
+            height: 6vh
     main
         .modale
             z-index: 999
@@ -39,6 +39,41 @@ body
             overflow-x: scroll
             overflow-y: scroll
             background-color: #0000005d
+        .modale2
+            background-color: #0000007d
+            height: 100vh
+            width: 100vw
+            z-index: 2
+            .video
+                position: fixed
+                width: 100%
+                left: 20%
+                top: 10%
+                video
+                    width: 60%
+                    height: 75vh
+                    position: relative
+            .closing2
+                position: absolute
+                font-size: xx-large
+                top: 3%
+                left: 55%
+                border-radius: 50%
+                background-color: #000000
+                border: 2px solid #fff
+                width: 1vw
+                height: 2vh
+                // text-align: center
+                padding: 1.5rem
+                margin: 1rem
+                display: flex
+                align-items: center
+                justify-content: center
+                cursor: pointer
+                &:hover
+                    background-color: #ffffff
+                    border: 2px solid #000000
+                    color: #000 !important
         .signUp
             width: 100%
             height: 80vh
@@ -188,6 +223,22 @@ body
             .image
                 img
                     width: 40vw
+                    position: relative
+                .playicon
+                    position: absolute
+                    top: 47%
+                    left: 71%
+                    transform: translate(-50%,50%)
+                    background-color: #900
+                    border-radius: 50%
+                    width: 5rem
+                    height: 5rem
+                    animation: popap 2s infinite
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    font-size: x-large
+                    cursor: pointer
         .secondSection
             display: flex
             flex-direction: column
@@ -682,11 +733,59 @@ body
 
 @media screen and ( max-width:426px  )
     body
+        h2
+            font-family: "myfont"
+            font-weight: bold
+            font-size: 40px !important
+        span
+            font-family: "myfont"
+            font-size: 40px !important
+        h1
+            font-family: "myfont"
+            font-size: 40px !important
+            span
+                font-family: "myfont"
+                font-size: 40px
         header
+            .navbar-toggler
+                width: 12vw !important
+                height: 6vh
+                display: flex
+                align-items: center
+                span
+                    width: 8vw !important
+            .navbar-nav
+                display: flex !important
+                align-items: center
+                justify-content: space-between
+                margin-top: 10vw
+                li
+                    width: 20vw
+                    padding: 0 0.2rem !important
+                    margin: 0.2rem !important
+                    border-bottom: 2px solid #fff
+                    a
+                        color: #fff
+                        font-weight: bold
+
+            .modal-btn
+                width: 28vw !important
+                height: 6vh
+            .navigation
+                position: fixed !important
+                top: 15.8% !important
+                right: -10vw !important
+                width: 0vw
+                height: 100vh !important
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+                transition: ease-in 0.4s !important
+                z-index: 999 !important
+                background: #900!important
+
             .buttonAndNav
                 width: 40vw !important
-                // flex-direction: row-reverse
-                // flex-direction: column
                 .buttonmodal
                     width: 50vw !important
                     height: 6vh
@@ -703,6 +802,38 @@ body
                     transition: background-size .5s, color .5s
 
         main
+            .modale2
+                // background-color: #0000007d
+                // height: 100vh
+                // width: 100vw !important
+                // z-index: 2
+                .video
+                    left: 10%
+                    video
+                        width: 80%
+                        height: 45vh
+                        position: relative
+                .closing2
+                    position: absolute
+                    font-size: xx-large
+                    top: 6%
+                    left: 62%
+                    border-radius: 50%
+                    background-color: #000000
+                    border: 2px solid #fff
+                    width: 1vw
+                    height: 2vh
+                    // text-align: center
+                    padding: 1.5rem
+                    margin: 1rem
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    cursor: pointer
+                    &:hover
+                        background-color: #ffffff
+                        border: 2px solid #000000
+                        color: #000 !important
             .signUp
                 width: 100%
                 height: 40vh
@@ -753,7 +884,10 @@ body
                         justify-content: space-around !important
                         // border: 2px solid #ab0000 !important
                         i
-                            width: 10vw !important
+                            justify-content: center
+                            align-items: center
+                            padding: 1rem !important
+                            width: 3vw !important
                             height: 5.5vh !important
                             margin-right: 0.2rem
 
@@ -763,6 +897,8 @@ body
                 .image
                     img
                         margin-bottom: 2rem
+                    .playicon
+                        display: none
 
             .secondSection
                 width: 100vw
@@ -798,6 +934,8 @@ body
                 .second
                     width: 80vw !important
                     margin-bottom: 1.5rem
+                    &:hover
+                        width: 85vw !important
 
             .forImage
                 flex-direction: column
@@ -956,14 +1094,14 @@ body
                     margin: 0 !important
                     margin: 2rem 0 0 0 !important
                     .firstInput
-                        display: flex  !important 
+                        display: flex !important
                         flex-direction: column !important
                         align-items: center !important
                         input
                             width: 80vw !important
                             margin-top: 0rem !important
                     input
-                        width:80vw !important
+                        width: 80vw !important
                         height: 8vh
                     // border: 1px solid #e5dada
                     // padding: 1rem
@@ -1006,13 +1144,20 @@ body
                         margin-bottom: 0.8rem
                     .icon
                         margin-bottom: 1rem
+                        img
+                            width: 2rem !important
                 .CopyRight
                     text-align: center
                     display: flex
                     flex-direction: column
                     text-align: center
                     border-top: 2px solid #878282
+                    .designed
+                        span
+                            font-size: small !important
 
+                img
+                    width: 3rem
                     p
                         font-size: small
 
@@ -1039,6 +1184,14 @@ body
                 background-size: 100% 100%
                 border: 3px solid #000000
                 color: #000 !important
+    .thirdSection
+        .first
+        .second
+            transition: 0.3s
+            &:hover
+                width: 21vw !important
+                height: 40vh !important
+                border: 4px solid #900
     .sixthSection
         .card1
             .first

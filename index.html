@@ -9,70 +9,69 @@
 </head>
 
 <body id="body">
-    <!-- ~header -->
     <header>
-        <div class="px-lg-15">
-            <nav class="navbar fixed-top navbar-expand-lg bg-white">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
-                        Lions Resto <span class="logoSpan text-danger ">.</span>
-                    </a>
-
-                    <div class=" buttonAndNav">
-                        <button type="button" class="btn openModal fw-bold buttonmodal text-white" id="openModal">Book
-                            a Table</button>
-
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <div class="d-lg-flex justify-content-lg-center w-100">
-                                <ul class="navbar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link  text-black fw-bold" href="#">Home</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">About Us</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Menu</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Events</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Chefs</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Gallery</a>
-                                    </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            Drop Down
-                                        </a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Drop</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact Us</a>
-                                    </li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex position-fixed z-3 w-100 top-0">
+            <div class="container z-3">
+                <a class="navbar-brand fs-2 fw-bolder" href="#">Lions Resto <span class="text-danger">.</span></a>
+                <div class="navigation collapse navbar-collapse z-3" id="navbarNavDropdown">
+                    <div class="nav-1 d-flex justify-content-lg-center gap-4">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="h-uderline nav-link fw-bolder" href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#sec2">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#menu">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#events">Events</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#chefs">Chefs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#">Gallery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="h-uderline nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Drop Down
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                            </div>
-                        </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link h-uderline" href="#contact">Contact</a>
+                            </li>
+                        </ul>
                     </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
                 </div>
-            </nav>
-        </div>
+                <div class="nav-btn w-25">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="modal-btn btn btn-danger rounded-5 w-50" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" id="openModal">
+                        Book A Table
+                    </button>
+                    <!-- Modal -->
+                </div>
+                <button class="navbar-toggler nav-btn-toggler" type="button" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
     </header>
-    <!-- ~header -->
 
-    <!-- ~main -->
+
     <main>
-        <!-- ^section Modal -->
         <section class="modale position-fixed d-none" id="modale">
             <div class="signUp signUpTog" id="signUp">
                 <div class="d-lg-flex justify-content-lg-center">
@@ -107,9 +106,18 @@
                 </div>
             </div>
         </section>
-        <!-- ^End section Modal -->
 
-        <!-- &heroSection -->
+        <section class="modale2 position-fixed d-none" id="modale2">
+            <div class="video">
+                <video class="videoModal" controls>
+                    <source src="./public/video/CINEMATIC.mp4" type="video/mp4">
+                </video>
+                <div class="closing2 text-white" id="closing">
+                    X
+                </div>
+            </div>
+        </section> 
+
         <section class="heroSection">
             <div class="title">
                 <h1>ENJOY YOUR HEALTHY DELICIOUS FOOD</h1>
@@ -117,19 +125,20 @@
                     vero, debitis numquam atque?</p>
                 <div class="allButton">
                     <button class="Button heroButton"> Book a Table</button>
-                    <div class="Button playVideo">
-                        <i class="fa-solid fa-play "></i>
+                    <div class="Button playVideo" id="playVideo">
+                        <i id="playVideo2" class="fa-solid fa-play "></i>
                         <span class="">Watch Video</span>
                     </div>
                 </div>
             </div>
             <div class="image">
                 <img src="./public/image/menu-item-1.png" alt="img">
+                <div class="playicon" id="playVideo3">
+                    <i class="fa-solid fa-play"></i>
+                </div>
             </div>
         </section>
-        <!-- &end heroSection -->
 
-        <!-- &secondSection -->
         <section class="secondSection">
             <div class="title">
                 <p>ABOUT US</p>
@@ -156,16 +165,14 @@
                             eos.</p>
                     </div>
                     <div class="video">
-                        <div class="playicon">
+                        <div class="playicon" id="playVideo4">
                             <i class="fa-solid fa-play "></i>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- &end secondSection -->
 
-        <!-- &thirdSection -->
         <section class="thirdSection">
             <div class="first">
                 <h1>Why Choose Yummy?</h1>
@@ -190,9 +197,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, repellendus?</p>
             </div>
         </section>
-        <!-- &end thirdSection -->
 
-        <!-- &imageSection -->
         <section class="imageSection">
             <div class="forImage">
                 <div class="client">
@@ -213,9 +218,7 @@
                 </div>
             </div>
         </section>
-        <!-- &end imageSection -->
 
-        <!-- ^MenuSection -->
         <section class="MenuSection">
             <div class="title">
                 <p>TESTIMONIALS</p>
@@ -420,12 +423,18 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="Breakfast">
+
+                </div>
+                <div class="Lunch">
+
+                </div>
+                <div class="Dinner"> -->
+
             </div>
             </div>
         </section>
-        <!-- ^end MenuSection -->
 
-        <!-- &fourthSection -->
         <section class="fourthSection">
             <div class="title">
                 <p>TESTIMONIALS</p>
@@ -540,9 +549,11 @@
 
             </div>
         </section>
-        <!-- &end fourthSection -->
 
-        <!-- &sixthSection -->
+        <section class="">
+
+        </section>
+
         <section class="sixthSection">
             <div class="title">
                 <h3>CHEFS</h3>
@@ -578,9 +589,7 @@
                 </div>
             </div>
         </section>
-        <!-- &end sixthSection -->
 
-        <!-- &seventhSecond -->
         <section class="seventhSecond">
             <div class="title">
                 <h3>Book A TABLE</h3>
@@ -604,15 +613,10 @@
                 </form>
             </div>
         </section>
-        <!-- &end seventhSecond -->
 
-        <!-- &eighthSection -->
         <section class="eighthSection">
 
         </section>
-        <!-- &end eighthSection -->
-
-        <!-- &ninthSection -->
 
         <section class="ninthSection">
             <div class="title">
@@ -669,11 +673,7 @@
                 <button><a href="#">Send Messge</a></button>
             </form>
         </section>
-        <!-- &end ninthSection -->
     </main>
-    <!-- ~end main -->
-
-    <!-- ~footer -->
     <footer>
         <div class="allInfo">
             <div class="first">
@@ -709,10 +709,9 @@
         </div>
         <div class="CopyRight">
             <p>&copy; Copyright Yammy All Rights Reserved</p>
-            <p>Designed by <span class="fw-bold"> BootstrapMade</span></p>
+            <p class="designed">Designed by <span class="fw-bold"> BootstrapMade</span></p>
         </div>
     </footer>
-    <!-- ~end footer -->
 
     <script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.js></script>
     <script src="./public/js/app.js"></script>

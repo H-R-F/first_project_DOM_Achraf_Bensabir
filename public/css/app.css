@@ -1,10 +1,14 @@
 @charset "UTF-8";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@font-face {
+  font-family: "myfont";
+  src: url(../../public/fonts/AmaticSC-Bold.ttf);
+}
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11862,31 +11866,34 @@ textarea.form-control-lg {
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-* header .logoSpan {
-  font-size: x-large;
-  font-weight: bold;
-}
-* header .buttonAndNav {
-  width: 90vw;
-  display: flex;
-  flex-direction: row-reverse;
-}
-* header .buttonAndNav .buttonmodal {
-  width: 11vw !important;
-  height: 6vh;
-  border: none;
-  border-radius: 20px;
-  background-color: #900 !important;
-  position: relative;
-  display: inline-block;
-  color: white;
-  background-image: linear-gradient(#7e6767, #7e6767);
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: 0% 100%;
-  transition: background-size 0.5s, color 0.5s;
-}
 
+body h2, body .h2 {
+  font-family: "myfont";
+  font-weight: bold;
+  font-size: 80px;
+}
+body h2 span, body .h2 span {
+  font-family: "myfont";
+  font-size: 80px;
+}
+body h1, body .h1 {
+  font-family: "myfont";
+  font-size: 80px !important;
+}
+body h1 span, body .h1 span {
+  font-family: "myfont";
+  font-size: 80px;
+}
+body header .navbar-nav {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body header .modal-btn {
+  width: 12vw !important;
+  height: 6vh;
+}
 body main .modale {
   z-index: 999;
   top: 3%;
@@ -11897,6 +11904,45 @@ body main .modale {
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.3647058824);
+}
+body main .modale2 {
+  background-color: rgba(0, 0, 0, 0.4901960784);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+body main .modale2 .video {
+  position: fixed;
+  width: 100%;
+  left: 20%;
+  top: 10%;
+}
+body main .modale2 .video video {
+  width: 60%;
+  height: 75vh;
+  position: relative;
+}
+body main .modale2 .closing2 {
+  position: absolute;
+  font-size: xx-large;
+  top: 3%;
+  left: 55%;
+  border-radius: 50%;
+  background-color: #000000;
+  border: 2px solid #fff;
+  width: 1vw;
+  height: 2vh;
+  padding: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+body main .modale2 .closing2:hover {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  color: #000 !important;
 }
 body main .signUp {
   width: 100%;
@@ -12055,6 +12101,23 @@ body main .heroSection .title .allButton .playVideo i:hover {
 }
 body main .heroSection .image img {
   width: 40vw;
+  position: relative;
+}
+body main .heroSection .image .playicon {
+  position: absolute;
+  top: 47%;
+  left: 71%;
+  transform: translate(-50%, 50%);
+  background-color: #900;
+  border-radius: 50%;
+  width: 5rem;
+  height: 5rem;
+  animation: popap 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  cursor: pointer;
 }
 body main .secondSection {
   display: flex;
@@ -12626,6 +12689,65 @@ body footer .CopyRight p {
 }
 
 @media screen and (max-width: 426px) {
+  body h2, body .h2 {
+    font-family: "myfont";
+    font-weight: bold;
+    font-size: 40px !important;
+  }
+  body span {
+    font-family: "myfont";
+    font-size: 40px !important;
+  }
+  body h1, body .h1 {
+    font-family: "myfont";
+    font-size: 40px !important;
+  }
+  body h1 span, body .h1 span {
+    font-family: "myfont";
+    font-size: 40px;
+  }
+  body header .navbar-toggler {
+    width: 12vw !important;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+  }
+  body header .navbar-toggler span {
+    width: 8vw !important;
+  }
+  body header .navbar-nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10vw;
+  }
+  body header .navbar-nav li {
+    width: 20vw;
+    padding: 0 0.2rem !important;
+    margin: 0.2rem !important;
+    border-bottom: 2px solid #fff;
+  }
+  body header .navbar-nav li a {
+    color: #fff;
+    font-weight: bold;
+  }
+  body header .modal-btn {
+    width: 28vw !important;
+    height: 6vh;
+  }
+  body header .navigation {
+    position: fixed !important;
+    top: 15.8% !important;
+    right: -10vw !important;
+    width: 0vw;
+    height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    transition: ease-in 0.4s !important;
+    z-index: 999 !important;
+    background: #900 !important;
+  }
   body header .buttonAndNav {
     width: 40vw !important;
   }
@@ -12643,6 +12765,36 @@ body footer .CopyRight p {
     background-repeat: no-repeat;
     background-size: 0% 100%;
     transition: background-size 0.5s, color 0.5s;
+  }
+  body main .modale2 .video {
+    left: 10%;
+  }
+  body main .modale2 .video video {
+    width: 80%;
+    height: 45vh;
+    position: relative;
+  }
+  body main .modale2 .closing2 {
+    position: absolute;
+    font-size: xx-large;
+    top: 6%;
+    left: 62%;
+    border-radius: 50%;
+    background-color: #000000;
+    border: 2px solid #fff;
+    width: 1vw;
+    height: 2vh;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  body main .modale2 .closing2:hover {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    color: #000 !important;
   }
   body main .signUp {
     width: 100%;
@@ -12700,7 +12852,10 @@ body footer .CopyRight p {
     justify-content: space-around !important;
   }
   body main .heroSection .allButton .playVideo i {
-    width: 10vw !important;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem !important;
+    width: 3vw !important;
     height: 5.5vh !important;
     margin-right: 0.2rem;
     font-size: large !important;
@@ -12708,6 +12863,9 @@ body footer .CopyRight p {
   }
   body main .heroSection .image img {
     margin-bottom: 2rem;
+  }
+  body main .heroSection .image .playicon {
+    display: none;
   }
   body main .secondSection {
     width: 100vw;
@@ -12751,6 +12909,9 @@ body footer .CopyRight p {
   body main .thirdSection .second {
     width: 80vw !important;
     margin-bottom: 1.5rem;
+  }
+  body main .thirdSection .second:hover {
+    width: 85vw !important;
   }
   body main .forImage {
     flex-direction: column;
@@ -12982,6 +13143,9 @@ body footer .CopyRight p {
   body footer .allInfo .second .icon {
     margin-bottom: 1rem;
   }
+  body footer .allInfo .second .icon img {
+    width: 2rem !important;
+  }
   body footer .allInfo .CopyRight {
     text-align: center;
     display: flex;
@@ -12989,7 +13153,13 @@ body footer .CopyRight p {
     text-align: center;
     border-top: 2px solid #878282;
   }
-  body footer .allInfo .CopyRight p {
+  body footer .allInfo .CopyRight .designed span {
+    font-size: small !important;
+  }
+  body footer .allInfo img {
+    width: 3rem;
+  }
+  body footer .allInfo img p {
     font-size: small;
   }
 }
@@ -13017,6 +13187,14 @@ body footer .CopyRight p {
     background-size: 100% 100%;
     border: 3px solid #000000;
     color: #000 !important;
+  }
+  .thirdSection .second {
+    transition: 0.3s;
+  }
+  .thirdSection .second:hover {
+    width: 21vw !important;
+    height: 40vh !important;
+    border: 4px solid #900;
   }
   .sixthSection .card1 .first:hover {
     height: 78vh;

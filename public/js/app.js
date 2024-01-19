@@ -1,20 +1,34 @@
+let nav = document.querySelector('.navigation');
+console.log(nav);
+let bol = true
+let navBtn = document.querySelector(".nav-btn-toggler")
+navBtn.addEventListener('click', () => {
+    if (bol) {
+        nav.style.width = "80vw"
+        bol = false
+    }else{
+        nav.style.width = "0vw"
+        bol = true
+    }
+        
+})
+
+
 let buttonOpenModal = document.getElementById("openModal")
 let modale = document.getElementById("modale")
 let signUp = document.getElementById("signUp")
-// let signUpTog = document.getElementsByClassName("signUpTog")
 let formSignIn = document.getElementById("formSignIn")
 let formLogIn = document.getElementById("formLogIn")
 let signIn = document.getElementById("signIn")
 let logIn = document.getElementById("logIn")
 let closing = document.querySelectorAll(".close")
-console.log(closing);
 
 let body = document.querySelector("body")
-    logIn.style.backgroundColor = "#810909be";
+logIn.style.backgroundColor = "#810909be";
 
 buttonOpenModal.addEventListener("click", function () {
     document.getElementById("body").style.overflowY = "hidden";
-    document.getElementById("body").style.opacity= "100%";
+    // document.getElementById("body").style.opacity= "100%";
     logIn.style.backgroundColor = "#810909be";
     modale.classList.add("d-felx")
     modale.classList.remove("d-none")
@@ -42,6 +56,41 @@ closing.forEach(element => {
     })
 });
 
+// *secondModal
+let secondModal = document.getElementById("modale2")
+let playVideo = document.getElementById("playVideo2")
+let playVideo2 = document.getElementById("playVideo3")
+let playVideo3 = document.getElementById("playVideo4")
+console.log(playVideo2);
+let closing2 = document.querySelectorAll(".closing2")
+
+playVideo.addEventListener("click", function () {
+    document.getElementById("body").style.overflowY = "hidden";
+    document.getElementById("body").style.opacity = "100%";
+    // logIn.style.backgroundColor = "#810909be";
+    secondModal.classList.add("d-felx")
+    secondModal.classList.remove("d-none")
+})
+playVideo2.addEventListener("click", function () {
+    document.getElementById("body").style.overflowY = "hidden";
+    document.getElementById("body").style.opacity = "100%";
+    // logIn.style.backgroundColor = "#810909be";
+    secondModal.classList.add("d-felx")
+    secondModal.classList.remove("d-none")
+})
+playVideo3.addEventListener("click", function () {
+    document.getElementById("body").style.overflowY = "hidden";
+    document.getElementById("body").style.opacity = "100%";
+    // logIn.style.backgroundColor = "#810909be";
+    secondModal.classList.add("d-felx")
+    secondModal.classList.remove("d-none")
+})
+closing2.forEach(element => {
+    element.addEventListener("click", function () {
+        secondModal.classList.toggle("d-none")
+        document.getElementById("body").style.overflowY = "scroll";
+    })
+});
 
 // *******
 

@@ -12332,12 +12332,10 @@ body main .MenuSection .allMenu .Starters .title {
   text-align: center;
 }
 body main .MenuSection .allMenu .Starters .title p {
-  font-size: x-large;
   color: #9b9595;
 }
 body main .MenuSection .allMenu .Starters .title h2, body main .MenuSection .allMenu .Starters .title .h2 {
   color: #900;
-  font-size: xx-large;
   font-weight: bold;
 }
 body main .MenuSection .allMenu .Starters .all {
@@ -12369,7 +12367,7 @@ body main .MenuSection .allMenu .Starters .all .first div h5, body main .MenuSec
 body main .MenuSection .allMenu .Starters .all .first div h4, body main .MenuSection .allMenu .Starters .all .first div .h4 {
   color: #900;
   font-weight: bold;
-  font-size: xx-large;
+  font-size: xx-large !important;
 }
 body main .fourthSection {
   background-color: #e5dada;
@@ -12421,6 +12419,26 @@ body main .fourthSection .carousel .content .contentOfCarousel .image img {
   border: 2px solid #fff;
   border-radius: 50%;
 }
+body main .fifthSecond {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+body main .fifthSecond .container {
+  position: relative;
+}
+body main .fifthSecond .container .box .content {
+  width: 100%;
+}
+body main .fifthSecond .container .box .content .card {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+}
+body main .fifthSecond .container .box .content .card .card-content .image img {
+  margin: 2rem;
+}
 body main .sixthSection {
   display: flex;
   flex-direction: column;
@@ -12458,6 +12476,13 @@ body main .sixthSection .card1 .first {
 body main .sixthSection .card1 .first img {
   border-radius: 4px 4px 10px 10px;
   width: 26vw;
+  position: relative;
+}
+body main .sixthSection .card1 .first .secondimg {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 54.6%;
 }
 body main .sixthSection .card1 .first .text {
   width: 26vw;
@@ -12828,6 +12853,7 @@ body footer .CopyRight p {
     width: 33vw !important;
   }
   body main .heroSection {
+    margin-top: 5rem;
     width: 100vw;
     flex-direction: column-reverse;
   }
@@ -12860,6 +12886,9 @@ body footer .CopyRight p {
     margin-right: 0.2rem;
     font-size: large !important;
     color: #ab0000;
+  }
+  body main .heroSection .allButton .playVideo span {
+    font-size: xx-large !important;
   }
   body main .heroSection .image img {
     margin-bottom: 2rem;
@@ -13163,73 +13192,71 @@ body footer .CopyRight p {
     font-size: small;
   }
 }
-@media screen and (min-width: 1441px) {
-  header .nav-item {
-    position: relative;
-  }
-  header .nav-item::after {
-    content: "";
-    border-bottom: 4px solid #900;
-    border-radius: 5px;
-    width: 0;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    transition: 0.7s;
-  }
-  header .nav-item:first-child::after, header .nav-item:hover::after {
-    width: 90%;
-  }
-  header .buttonmodal {
-    width: 30vw !important;
-  }
-  header .buttonmodal:hover {
-    background-size: 100% 100%;
-    border: 3px solid #000000;
-    color: #000 !important;
-  }
-  .thirdSection .second {
-    transition: 0.3s;
-  }
-  .thirdSection .second:hover {
-    width: 21vw !important;
-    height: 40vh !important;
-    border: 4px solid #900;
-  }
-  .sixthSection .card1 .first:hover {
-    height: 78vh;
-    box-shadow: 0 0 10px 10px #cfcaca;
-  }
-  .sixthSection .card1 .first:hover:after {
-    position: absolute;
-    width: 16%;
-    height: 10%;
-    opacity: 60%;
-    right: 0;
-    top: 10%;
-    content: url(../image/icons8-twitterx-50.png);
-    background-color: #000;
-    border-radius: 10px 0px 0px 10px;
-  }
-  .sixthSection .card1 .first:hover:before {
-    position: absolute;
-    width: 16%;
-    height: 10%;
-    opacity: 60%;
-    right: 0;
-    top: 22%;
-    content: url(../image/icons8-twitterx-50.png);
-    background-color: #000;
-    border-radius: 3px;
-    border-radius: 10px 0px 0px 10px;
-  }
-  .ninthSection .allCard .card1 .insidCard {
-    transition: 1s;
-  }
-  .ninthSection .allCard .card1 .insidCard:hover {
-    width: 41vw;
-    height: 17vh;
-  }
+main header .nav-item {
+  position: relative;
+}
+main header .nav-item::after {
+  content: "";
+  border-bottom: 4px solid #900;
+  border-radius: 5px;
+  width: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: 0.7s;
+}
+main header .nav-item:first-child::after, main header .nav-item:hover::after {
+  width: 90%;
+}
+main header .buttonmodal {
+  width: 30vw !important;
+}
+main header .buttonmodal:hover {
+  background-size: 100% 100%;
+  border: 3px solid #000000;
+  color: #000 !important;
+}
+main .thirdSection .second {
+  transition: 0.3s;
+}
+main .thirdSection .second:hover {
+  width: 21vw !important;
+  height: 40vh !important;
+  border: 4px solid #900;
+}
+main .sixthSection .card1 .first:hover {
+  height: 78vh;
+  box-shadow: 0 0 10px 10px #cfcaca;
+}
+main .sixthSection .card1 .first:hover:after {
+  position: absolute;
+  width: 16%;
+  height: 10%;
+  opacity: 60%;
+  right: 0;
+  top: 10%;
+  content: url(../image/icons8-twitterx-50.png);
+  background-color: #000;
+  border-radius: 10px 0px 0px 10px;
+}
+main .sixthSection .card1 .first:hover:before {
+  position: absolute;
+  width: 16%;
+  height: 10%;
+  opacity: 60%;
+  right: 0;
+  top: 22%;
+  content: url(../image/icons8-twitterx-50.png);
+  background-color: #000;
+  border-radius: 3px;
+  border-radius: 10px 0px 0px 10px;
+}
+main .ninthSection .allCard .card1 .insidCard {
+  transition: 1s;
+}
+main .ninthSection .allCard .card1 .insidCard:hover {
+  width: 41vw;
+  height: 17vh;
 }
 
 /*# sourceMappingURL=app.css.map */

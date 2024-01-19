@@ -19,7 +19,6 @@ body
             font-family: "myfont"
             font-size: 80px
     header
-        100vw
         .navbar-nav
             width: 60vw
             display: flex
@@ -424,11 +423,9 @@ body
                     .title
                         text-align: center
                         p
-                            font-size: x-large
                             color: #9b9595
                         h2
                             color: #900
-                            font-size: xx-large
                             font-weight: bold
                     .all
                         display: flex
@@ -447,14 +444,13 @@ body
                                     width: 12vw
                                     margin-bottom: 1.5rem
                                 h3
-
                                     font-size: xx-large
                                 h5
                                     color: #9b9595
                                 h4
                                     color: #900
                                     font-weight: bold
-                                    font-size: xx-large
+                                    font-size: xx-large !important
 
         .fourthSection
             // height: 80vh
@@ -499,6 +495,27 @@ body
                                 width: 15vw
                                 border: 2px solid #fff
                                 border-radius: 50%
+        
+        .fifthSecond
+            display: none
+            justify-content: center
+            align-items: center
+            width: 100%
+            .container
+                position: relative
+                .box
+                    .content
+                        // display: flex
+                        width: 100%
+                        .card
+                            width: fit-content
+                            display: flex 
+                            flex-direction: row
+                            .card-content
+                                .image
+                                    img
+                                        margin: 2rem
+
 
         .sixthSection
             display: flex
@@ -533,6 +550,12 @@ body
                     img
                         border-radius: 4px 4px 10px 10px
                         width: 26vw
+                        position: relative
+                    .secondimg
+                        position: absolute
+                        z-index: 1
+                        left: 0
+                        top: 54.6%
                     .text
                         width: 26vw
                         text-align: center
@@ -731,6 +754,8 @@ body
             p
                 font-size: small
 
+        
+
 @media screen and ( max-width:426px  )
     body
         h2
@@ -864,6 +889,7 @@ body
                     button
                         width: 33vw !important
             .heroSection
+                margin-top: 5rem
                 width: 100vw
                 flex-direction: column-reverse
                 .title
@@ -894,6 +920,8 @@ body
                             font-size: large !important
                             // border: none !important
                             color: #ab0000
+                        span 
+                            font-size: xx-large !important
                 .image
                     img
                         margin-bottom: 2rem
@@ -1161,8 +1189,8 @@ body
                     p
                         font-size: small
 
-@media screen and ( min-width: 1441px )
-    main
+@media screen and ( min-width: 1444px )
+main
     header
         .nav-item
             position: relative
@@ -1185,7 +1213,6 @@ body
                 border: 3px solid #000000
                 color: #000 !important
     .thirdSection
-        .first
         .second
             transition: 0.3s
             &:hover
